@@ -6,4 +6,8 @@ export class Genre{
         this.Id = Id;
         this.Name = Name;
     }
+
+    get name() {
+        return this.Name;
+    }
 }
