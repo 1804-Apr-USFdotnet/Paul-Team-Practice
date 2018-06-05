@@ -17,7 +17,7 @@ export class ItemsService {
 
   getMovie(id: number) {
     return this.movies.filter(m => {
-      return m.Id === id;
+      return m.id === id;
     });
   }
 
@@ -27,7 +27,7 @@ export class ItemsService {
 
   deleteMovie(id: number) {
     this.movies = this.movies.filter(m => {
-      return m.Id !== id;
+      return m.id !== id;
     });
   }
 }
