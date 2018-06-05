@@ -1,3 +1,12 @@
 mat-grid-tile {
-    background: lightblue;
-  }
+  background: lightblue;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://picsum.photos/200/300/?random');
+  background-size: cover;
+}

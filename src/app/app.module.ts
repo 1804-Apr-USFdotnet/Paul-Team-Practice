@@ -11,6 +11,8 @@ import {MatButtonModule, MatCheckboxModule, MatList} from '@angular/material';
 import {MatListModule} from '@angular/material/list';
 
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+
 import { ShowMovieComponent } from './show-movie/show-movie.component';
 import { AppRoutingModule } from './/app-routing.module';
 
@@ -28,6 +30,7 @@ import { AppRoutingModule } from './/app-routing.module';
     MatCheckboxModule,
     MatGridListModule,
     MatListModule,
+    MatCardModule,
     AppRoutingModule
   ],
   providers: [ItemsService],
