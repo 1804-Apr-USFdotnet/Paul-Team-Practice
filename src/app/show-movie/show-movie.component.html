@@ -1,0 +1,12 @@
+<p>
+  show-movie works!
+</p>
+
+<mat-list *ngFor="let mov of movie">
+ <mat-list-item> Description: {{mov.Description}} </mat-list-item>
+ <mat-list-item> Genre: {{mov.Genre.Name}} </mat-list-item>
+ <mat-list-item> Title: {{mov.Title}} </mat-list-item>
+ <mat-list-item> Year: {{mov.Year}} </mat-list-item>
+
+
+</mat-list>
