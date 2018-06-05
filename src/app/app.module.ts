@@ -7,19 +7,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ItemsComponent } from './items/items.component';
 
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatList} from '@angular/material';
+import {MatListModule} from '@angular/material/list';
+
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ShowMovieComponent } from './show-movie/show-movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ItemsComponent
+    ItemsComponent,
+    ShowMovieComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
-    [MatButtonModule, MatCheckboxModule, MatGridListModule],
+    MatButtonModule, MatCheckboxModule, MatGridListModule, MatListModule,
   ],
   providers: [ItemsService],
   bootstrap: [AppComponent]
