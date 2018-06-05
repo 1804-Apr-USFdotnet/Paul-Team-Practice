@@ -17,7 +17,17 @@ export class ItemsService {
 
   getMovie(id: number) {
     return this.movies.filter(m => {
-      return m.Id == id;
+      return m.Id === id;
+    });
+  }
+
+  createMovie(movie: Movie) {
+    this.movies.push(movie);
+  }
+
+  deleteMovie(id: number) {
+    this.movies = this.movies.filter(m => {
+      return m.Id !== id;
     });
   }
 }
