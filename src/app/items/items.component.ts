@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { movieList } from '../items.repo';
+import { ItemsService } from '../items.service';
+import { Movie } from '../models/movie';
 
 @Component({
   selector: 'app-items',
@@ -7,11 +10,16 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./items.component.css']
 })
 export class ItemsComponent implements OnInit {
+  movies: Movie[];
 
-  items = ["john", "paul", "cooper", "andrew", "david"];
+  constructor(private itemsService: ItemsService) { 
+    this.movies = itemsService.getMovies();
+  }
 
-  constructor() { }
-
+  onClick(movie){
+    console.log(movie.Title);
+  }
+  
   ngOnInit() {
   }
 

@@ -1,6 +1,5 @@
 import { Movie } from './models/movie';
 import { Injectable } from '@angular/core';
-
 import { movieList } from './items.repo';
 
 @Injectable({
