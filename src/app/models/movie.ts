@@ -14,4 +14,24 @@ export class Movie {
         this.Description = Description;
         this.Year = Year;
     }
+
+    get id() {
+        return this.Id;
+    }
+
+    get title() {
+        return this.Title;
+    }
+
+    get genre() {
+        return this.Genre.name;
+    }
+
+    get description() {
+        return this.Description;
+    }
+
+    get year() {
+        return this.Year;
+    }
 }
