@@ -13,6 +13,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { ShowMovieComponent } from './show-movie/show-movie.component';
 import { AppRoutingModule } from './/app-routing.module';
 
@@ -31,7 +33,9 @@ import { AppRoutingModule } from './/app-routing.module';
     MatGridListModule,
     MatListModule,
     MatCardModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [ItemsService],
   bootstrap: [AppComponent]
