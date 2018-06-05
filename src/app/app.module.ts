@@ -24,7 +24,11 @@ import { AppRoutingModule } from './/app-routing.module';
   imports: [
     BrowserModule,
     CommonModule,
-    MatButtonModule, MatCheckboxModule, MatGridListModule, MatListModule, AppRoutingModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatGridListModule,
+    MatListModule,
+    AppRoutingModule
   ],
   providers: [ItemsService],
   bootstrap: [AppComponent]
