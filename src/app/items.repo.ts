@@ -9,4 +9,4 @@ export const movieList: Movie[] = [
     new Movie(5, "Movie 5", new Genre(5, 'Adventure'), 'a really awesome movie', 2012),
     new Movie(6, "Movie 6", new Genre(6, 'Action'), 'a really long movie', 2014),
     new Movie(7, "Movie 7", new Genre(7, 'Romance'), 'a really romantic movie', 2018)
-]
+];
