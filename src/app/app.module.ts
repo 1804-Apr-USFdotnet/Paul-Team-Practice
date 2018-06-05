@@ -12,6 +12,7 @@ import {MatListModule} from '@angular/material/list';
 
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ShowMovieComponent } from './show-movie/show-movie.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ShowMovieComponent } from './show-movie/show-movie.component';
   imports: [
     BrowserModule,
     CommonModule,
-    MatButtonModule, MatCheckboxModule, MatGridListModule, MatListModule,
+    MatButtonModule, MatCheckboxModule, MatGridListModule, MatListModule, AppRoutingModule,
   ],
   providers: [ItemsService],
   bootstrap: [AppComponent]

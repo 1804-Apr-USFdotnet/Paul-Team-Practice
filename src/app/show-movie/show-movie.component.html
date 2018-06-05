@@ -2,8 +2,11 @@
   show-movie works!
 </p>
 
-<mat-list>
- <mat-list-item> Pepper </mat-list-item>
- <mat-list-item> Salt </mat-list-item>
- <mat-list-item> Paprika </mat-list-item>
+<mat-list *ngFor="let mov of movie">
+ <mat-list-item> Description: {{mov.Description}} </mat-list-item>
+ <mat-list-item> Genre: {{mov.Genre.Name}} </mat-list-item>
+ <mat-list-item> Title: {{mov.Title}} </mat-list-item>
+ <mat-list-item> Year: {{mov.Year}} </mat-list-item>
+
+
 </mat-list>
