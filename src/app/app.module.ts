@@ -19,7 +19,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
   imports: [
     BrowserModule,
     CommonModule,
-    [MatButtonModule, MatCheckboxModule, MatGridListModule],
+    MatButtonModule, MatCheckboxModule, MatGridListModule
   ],
   providers: [ItemsService],
   bootstrap: [AppComponent]
