@@ -1,3 +1,4 @@
+import { ItemsService } from './items.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,7 +15,7 @@ import { ItemsComponent } from './items/items.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
