@@ -30,6 +30,7 @@ import { AppRoutingModule } from './/app-routing.module';
     MatCheckboxModule,
     MatGridListModule,
     MatListModule,
+    MatCardModule,
     AppRoutingModule
   ],
   providers: [ItemsService],
