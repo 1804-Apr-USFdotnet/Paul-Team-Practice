@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { movieList, Libary } from '../items.repo';
+import { movieList } from '../items.repo';
 import { ItemsService } from '../items.service';
 import { Movie } from '../models/movie';
 
@@ -12,18 +12,15 @@ import { Movie } from '../models/movie';
 export class ItemsComponent implements OnInit {
   movies: Movie[];
 
-  constructor(private itemsService: ItemsService) { }
+  constructor(private itemsService: ItemsService) { 
+    this.movies = itemsService.getMovies();
+  }
 
-  onClick(){
-    console.log(this.movies[0].Title);
+  onClick(movie){
+    console.log(movie.Title);
   }
   
   ngOnInit() {
-    // this.movies = this.itemsService.getMovies();
-    this.movies = Libary.getMovies();
-    this.movies.forEach(m => {
-      console.log(m.Title);
-    });
   }
 
 }
